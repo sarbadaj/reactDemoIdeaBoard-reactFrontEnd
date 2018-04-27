@@ -6,7 +6,8 @@ import IdeaForm from './IdeaForm'
 
 class IdeasContainer extends Component {
 
-  addNewIdea() {
+
+  addNewIdea=()=> {
     axios.post(
       'http://localhost:3001/api/v1/ideas.json',
       { idea:
